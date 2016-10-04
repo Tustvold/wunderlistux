@@ -2,18 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/browser.js"></script>
     <script src="js/jquery-3.1.0.min.js"></script>
   <body>
-    <div id="conv" style="background: red;
-    padding: 32px;
-    display: block;
-    margin-top: 20px;
-    z-index: 99999;
-    -webkit-app-region: no-drag;
-    position: absolute;"></div>
     <webview src="https://www.wunderlist.com/#/lists/inbox" autosize="on" preload="js/webview-load.js"  id="webview"  ></webview>
+    <button id="close-btn"></button>
     <div id="controls">
-      <button id="close-btn"></button>
       <button id="min-btn" > </button>
       <button id="max-btn" ></button>
       <button id="settings-btn"></button>
@@ -28,5 +22,7 @@
       </div>
     </div>
   </body>
+  <script src="js/utils.js"></script>
+  <script src="js/onload.js"></script>
   <script src="js/controls.js"></script>
 </html>

@@ -3,11 +3,9 @@ const {app, BrowserWindow, dialog} = require('electron');
 
 let mainWindow;
 
-app.on('window-all-closed', function() {
-  app.quit();
-});
+let quitApp = function(){ app.quit(); };
 
-let quitApp = function(){ app.quit() }
+app.on('window-all-closed', quitApp);
 
 app.on('ready', function() {
   var size = { width: 800, height: 592 };

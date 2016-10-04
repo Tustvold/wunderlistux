@@ -17,19 +17,20 @@ html, body {
     background:  rgba(222, 222, 222, 1);
 }
 
-#controls button {
+#controls button, #close-btn {
     border-radius: 99px;
     padding: 7px;
     border: none;
     margin: 3px;
 }
 
-#controls button#close-btn {
+button#close-btn {
     background: none;
     position: absolute;
     left: 16px;
-    top: 12px;
+    top: 18px;
     background-image: url("images/close.png");
+    z-index: 999;
 }
 
 webview {
