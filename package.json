@@ -1,5 +1,5 @@
 {
-  "name": "Wunderlistux",
+  "name": "Wunderlist",
   "version": "0.0.7",
   "description": "An electron wrapper for wunderlist made with :heart: for Linux",
   "icon": "images/icon.png",
